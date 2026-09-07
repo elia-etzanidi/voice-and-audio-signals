@@ -1,1 +1,41 @@
-# voice-and-audio-signals
+# Speech Background Segmentation
+
+This code implements the Voice Activity Detection task using k-NN and a 2-Layer MLP.
+
+## Prerequisites
+
+To run the code, please install the required libraries by running:
+
+```bash
+pip install -r requirements.txt
+```
+
+## Data Structure (Very Important)
+
+The audio files and transcriptions are NOT included.
+
+In order to run `main.py`, please create a `data` folder in the root directory (next to `main.py`) with the following exact structure:
+
+```text
+project_folder/
+├── main.py
+├── src/
+├── data/
+│   ├── train/
+│   │   ├── noise/  (contains the free-sound & sound-bible subfolders)
+│   │   └── speech/ (contains the librivox & us-gov subfolders)
+│   └── test/
+│       ├── S01_U04.CH4.wav
+│       └── S01.json
+└── requirements.txt
+```
+
+## Execution
+
+Once the data has been placed in the appropriate directories, simply run:
+
+```bash
+python main.py
+```
+
+The program will read the data, train the models, and save the final CSV files in the `results/` folder, which will be created automatically.

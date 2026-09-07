@@ -4,17 +4,17 @@ This code implements the Voice Activity Detection task using k-NN and a 2-Layer 
 
 ## Prerequisites
 
-To run the code, please install the required libraries by running:
+To run the code, install the required libraries by running:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-## Data Structure (Very Important)
+## Data Structure
 
-The audio files and transcriptions are NOT included.
+The audio files and transcriptions are not included.
 
-In order to run `main.py`, please create a `data` folder in the root directory (next to `main.py`) with the following exact structure:
+In order to run `main.py`, create a `data` folder in the root directory with the following structure:
 
 ```text
 project_folder/
@@ -32,7 +32,7 @@ project_folder/
 
 ## Execution
 
-Once the data has been placed in the appropriate directories, simply run:
+Once the data has been placed in the appropriate directories, run:
 
 ```bash
 python main.py
